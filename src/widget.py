@@ -10,9 +10,6 @@ def mask_account_card(data_card: str) -> str:
     return data_card_mask
 
 
-print(mask_account_card("Visa Platinum 7000792289606361"))
-
-
 def get_date(old_date: str) -> str:
     """Функция принимает на вход строку с датой в формате '2024-03-11T02:26:18.671407' и
     возвращает строку с датой в формате 'ДД.ММ.ГГГГ'"""
@@ -27,6 +24,3 @@ def get_date(old_date: str) -> str:
     split_date = date_new_split[::-1]
     result = ".".join(split_date)
     return result
-
-
-print(get_date("11.03.2024"))
