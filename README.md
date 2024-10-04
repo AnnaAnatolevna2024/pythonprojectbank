@@ -19,6 +19,9 @@
 
 from processing import filter_by_state, sort_by_date
 
+## Тестирование проекта
+с помощью pytest
+
 ### Описание функций
 
 1. **filter_by_state(start_list: List[Dict], state_id: str = "EXECUTED") -> List[Dict]:**
