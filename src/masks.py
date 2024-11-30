@@ -1,4 +1,4 @@
-def get_mask_card_number(card: str) -> str:
+def get_mask_card_number(card: str) -> str | None:
     """Функция зашифровывает номер карты"""
     slice_card = card[6:12]
     mask_card = card.replace(slice_card, "******")
@@ -6,7 +6,7 @@ def get_mask_card_number(card: str) -> str:
     return new_mask_card
 
 
-def get_mask_account(acc: str) -> str:
+def get_mask_account(acc: str) -> str | None:
     """Функция зашифровывает номер счета"""
     slice_acc = acc[:16]
     mask_acc = acc.replace(slice_acc, "**")
